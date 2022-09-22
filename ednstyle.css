@@ -5,7 +5,7 @@
     --fw-bold: 700;
     --clr-light: #fff;
     --clr-dark: #303830;
-    --clr-accent: #228b22;
+    --clr-accent: #14a800;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -52,6 +52,11 @@ body {
     position: relative;
 }
 
+i {
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+
 .contentleft {
     width: 250px;
     border: 1px solid #f9f3f3;
@@ -79,7 +84,7 @@ p.linehead {
     text-transform: uppercase;
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    font-size: large;
+    font-size: medium;
 }
 
 p.linehead:before,
@@ -173,7 +178,7 @@ ul.empcontent {
 }
 
 .empcontent li {
-    list-style-type: square;
+    list-style-type: disc;
 }
 
 p.textheadtwo {
@@ -198,7 +203,7 @@ span.sk {
     border: 1px solid #fff;
     width: 100px;
     margin-left: 130px;
-    padding-left: 1em;
+    padding-left: 9px;
     line-height: 2em;
 }
 
