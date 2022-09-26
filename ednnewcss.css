@@ -1,0 +1,355 @@
+:root {
+    --ff-primary: 'Jost', sans-serif;
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --clr-accent: #722f37;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+/* General styles */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1000px;
+    line-height: 20px;
+    /* height: 1640px; */
+}
+
+
+hr {
+    border-top: 4px solid var(--clr-accent);
+}
+
+i {
+    color: var(--clr-accent);
+}
+
+
+.intro {
+    padding-top: 25px;
+    text-align: justify;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.headleft {
+    width: 900px;
+    margin-left: 60px;
+    position: absolute;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+}
+
+ul.links {
+    display: inline;
+    list-style-position: outside;
+    margin-left: -40px !important;
+}
+
+ul.links li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 5px;
+}
+
+.headright {
+    width: 180px;
+    margin-left: 720px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.headright img {
+    width: 180px;
+    height: 180px;
+}
+
+.introname {
+    color: var(--clr-accent);
+    text-transform: capitalize;
+    font-size: 45px;
+    
+    font-family: 'Paprika', cursive;
+}
+
+.introposition {
+    padding-left: 28px;
+    color: var(--clr-accent);
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    width: 998px;
+}
+
+.detail {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.detailhead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+/* tr {
+    line-height: 30px;
+    vertical-align: text-top;
+} */
+
+td.detailone {
+    width: 200px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+td.detailtwo {
+    width: 300px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
+
+/* p.detaildesc {
+    text-align: justify;
+} */
+
+.profile {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.profilehead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+
+p.profiledesc {
+    text-align: justify;
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.proexp {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.proexphead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+/* .proexpdetail {
+    border: 1px solid fff;
+} */
+/* ======================================================================================== */
+
+.proexpduration {
+    margin-left: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+.proeduduration {
+    margin-left: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+
+.proexpname {
+    margin-left: 0px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-size: 18x;
+}
+
+.proexpplace {
+    margin-left: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* .proexpdesc {
+    border: 1px solid fff;
+} */
+
+.proexpresp {
+    /* padding-left: 192px; */
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
+
+.proexppj {
+    /* padding-left: 192px; */
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
+
+ul.proexpcontent {
+    list-style: square outside;
+    padding-inline-start: 20px;
+}
+
+/* ======================================================================= */
+
+.education {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.educationhead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.certificate {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.certificatehead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.certificateduration {
+    padding-right: 110px;
+    padding-left: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+/* =============================================================================== */
+.skills {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.skillshead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+/* table {
+    border: 1px solid black;
+} */
+
+tr {
+    line-height: 30px;
+    vertical-align: text-top;
+
+}
+
+td.skillsone {
+    width: 250px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+}
+
+ul.skillstwo {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    list-style-type: square;
+    margin-left: -20px;
+    line-height: 24px;
+}
+
+/* =============================================================================== */
+
+
+.lang {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.langhead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+/* ======================================================================================= */
+
+.freelancepj {
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+p.freelancepjhead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+ol.freelancepjcontent {
+    list-style: decimal outside;
+    padding-inline-start: 17px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+ol.freelancepjcontent li {
+    line-height: 25px;
+}
+
+/* =================================================================================== */
+
+.interest {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+p.interesthead {
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+ul.interestcontent {
+    list-style: none outside;
+    padding-inline-start: 2px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+ul.interestcontent li {
+    line-height: 25px;
+}
