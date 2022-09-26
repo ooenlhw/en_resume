@@ -2,7 +2,8 @@
     --ff-primary: 'Jost', sans-serif;
     --clr-light: #fff;
     --clr-dark: #000;
-    --clr-accent: #722f37;
+    --clr-accent: #e0115f;
+    /* e3797e */
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -28,7 +29,9 @@ body {
 
 
 hr {
-    border-top: 4px solid var(--clr-accent);
+    border: 2px solid var(--clr-accent);
+    background-color: var(--clr-accent);
+    /* border-bottom: 2px solid var(--clr-accent); */
 }
 
 i {
@@ -314,7 +317,7 @@ p.langhead {
 }
 
 p.freelancepjhead {
-    text-transform: capitalize;
+    text-transform: none;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
 }
