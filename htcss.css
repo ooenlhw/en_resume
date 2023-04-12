@@ -53,9 +53,9 @@ i {
 
 .headright {
     width: 180px;
-    margin-left: 758px;
+    margin-left: 715px;
     position: relative;
-    padding-top: 25px;
+    padding-top: 79px;
 }
 
 .headright img {
@@ -165,7 +165,7 @@ p.proexphead {
 }
 
 .proexpname {
-    padding-left: 18px;
+    padding-left: 9px;
     font-family: 'Saira', sans-serif;
     font-weight: 500;
 }

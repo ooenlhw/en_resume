@@ -23,7 +23,7 @@ html {
 
 body {
     width: 1000px;
-    line-height: 20px;
+    /* line-height: 20px; */
     /* height: 1640px; */
 }
 
@@ -43,7 +43,6 @@ i {
     padding-top: 25px;
     text-align: justify;
     height: 200px;
-    margin-bottom: 20px;
 }
 
 .headleft {
@@ -70,7 +69,7 @@ ul.links li {
     width: 180px;
     margin-left: 720px;
     position: relative;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .headright img {

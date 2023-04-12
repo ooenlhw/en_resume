@@ -1,0 +1,20 @@
+section p { 
+    color: red;
+}
+
+section + p {
+    color: blue;
+}
+
+ul {
+    --color: red;
+
+}
+
+p {
+    color: var(--color);
+}
+
+h2 ~ p {
+    color: blue;
+}
