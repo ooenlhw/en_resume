@@ -332,6 +332,16 @@ ol.freelancepjcontent li {
     line-height: 25px;
 }
 
+ul.keypj {
+    list-style: square outside !important;
+    padding-inline-start: 17px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+ul.keypj li {
+    line-height: 25px;
+}
 /* =================================================================================== */
 
 .interest {
