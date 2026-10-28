@@ -1,14 +1,627 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e3443">
+  <meta name="description"
+    content="Eaindra Naing — Flutter developer building thoughtful mobile and web experiences. Explore her 2026 résumé and portfolio.">
+  <title>Eaindra Naing — Flutter Developer</title>
+  <link rel="icon" type="image/svg+xml" href="icons/home.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --deep: #0e3443;
+      --navy: #173e4e;
+      --teal: #177d91;
+      --foam: #d9eef1;
+      --pale: #f3f9fa;
+      --muted: #56707b;
+      --line: #cfe3e7
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--pale);
+      color: var(--deep);
+      font: 400 16px/1.65 'DM Sans', sans-serif
+    }
+
+    a {
+      color: inherit
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--teal);
+      outline-offset: 4px
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 20px;
+      background: #fff;
+      padding: 8px 12px;
+      z-index: 10
+    }
+
+    .skip-link:focus {
+      top: 12px
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 48px));
+      margin-inline: auto
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #f9fcfc
+    }
+
+    .header-inner {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .brand {
+      text-decoration: none;
+      font: 400 32px/1 'Playfair Display', Georgia, serif;
+      letter-spacing: -.05em
+    }
+
+    .brand span {
+      color: var(--teal)
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase
+    }
+
+    .site-nav a:hover {
+      color: var(--teal)
+    }
+
+    .site-nav .nav-contact {
+      padding: 10px 18px;
+      border: 1px solid var(--deep);
+      border-radius: 30px
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(145deg, #f6fbfb 5%, #e8f4f6 95%)
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 620px;
+      height: 620px;
+      right: -250px;
+      bottom: -360px;
+      border: 1px solid #b8dce3;
+      border-radius: 50%;
+      pointer-events: none
+    }
+
+    .hero-inner {
+      min-height: 690px;
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 6%;
+      align-items: center;
+      padding-block: 70px 85px
+    }
+
+    .eyebrow {
+      margin: 0 0 23px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .19em;
+      text-transform: uppercase
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      vertical-align: middle;
+      margin-right: 12px
+    }
+
+    .hero h1,
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 400;
+      letter-spacing: -.055em;
+      line-height: 1.08
+    }
+
+    .hero h1 {
+      font-size: clamp(58px, 7vw, 102px);
+      margin: 0 0 24px
+    }
+
+    .hero h1 em,
+    .section-title em {
+      font-weight: 400;
+      color: var(--teal)
+    }
+
+    .hero-lead {
+      max-width: 560px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.7
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      margin-top: 36px
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 15px 23px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform .2s, background .2s
+    }
+
+    .button:hover {
+      transform: translateY(-3px)
+    }
+
+    .button-primary {
+      background: var(--deep);
+      color: #fff
+    }
+
+    .button-primary:hover {
+      background: #176c80
+    }
+
+    .button-outline {
+      border: 1px solid #89b6c0;
+      color: var(--deep)
+    }
+
+    .button-outline:hover {
+      background: #dfedf0
+    }
+
+    .portrait-shell {
+      position: relative;
+      max-width: 410px;
+      margin-inline: auto
+    }
+
+    .portrait-shell::before {
+      content: '';
+      position: absolute;
+      inset: 18px -18px -18px 18px;
+      border: 1px solid #a4d0d9;
+      border-radius: 220px 220px 20px 20px
+    }
+
+    .portrait-shell img {
+      position: relative;
+      width: 100%;
+      height: 510px;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 220px 220px 20px 20px;
+      box-shadow: 0 28px 60px #133b4a22
+    }
+
+    .portrait-note {
+      position: absolute;
+      right: -33px;
+      bottom: 26px;
+      background: #fff;
+      padding: 14px 18px;
+      box-shadow: 0 12px 35px #133b4a20;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      line-height: 1.6;
+      color: var(--teal)
+    }
+
+    .intro-strip {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: #fff
+    }
+
+    .strip-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-block: 20px
+    }
+
+    .strip-inner span {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      color: var(--muted);
+      text-transform: uppercase
+    }
+
+    .strip-inner .strip-mark {
+      font: 400 29px/1 'Playfair Display', Georgia, serif;
+      color: var(--teal);
+      letter-spacing: 0
+    }
+
+    .explore {
+      padding-block: 110px 120px
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 40px;
+      margin-bottom: 42px
+    }
+
+    .section-title {
+      font-size: clamp(42px, 5vw, 66px);
+      margin: 0
+    }
+
+    .section-heading>p {
+      max-width: 330px;
+      margin: 0 0 8px;
+      color: var(--muted)
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px
+    }
+
+    .feature-link {
+      position: relative;
+      min-height: 305px;
+      padding: 35px;
+      background: #fff;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s, box-shadow .2s
+    }
+
+    .feature-link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 22px 45px #0e344314
+    }
+
+    .feature-link--portfolio {
+      background: var(--deep);
+      color: #fff;
+      border-color: var(--deep)
+    }
+
+    .feature-link__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      color: var(--teal)
+    }
+
+    .feature-link--portfolio .feature-link__top {
+      color: #91dce5
+    }
+
+    .feature-link__arrow {
+      font-size: 25px;
+      line-height: 1;
+      letter-spacing: 0
+    }
+
+    .feature-link__body {
+      margin-top: auto
+    }
+
+    .feature-link h3 {
+      font: 400 clamp(35px, 4vw, 52px)/1.1 'Playfair Display', Georgia, serif;
+      letter-spacing: -.045em;
+      margin: 0 0 13px
+    }
+
+    .feature-link p {
+      color: var(--muted);
+      max-width: 360px;
+      margin: 0
+    }
+
+    .feature-link--portfolio p {
+      color: #bad3dc
+    }
+
+    .footer {
+      background: var(--deep);
+      color: #e8f5f7
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      padding-block: 38px
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: .1em
+    }
+
+    .footer a {
+      font-size: 13px;
+      text-underline-offset: 4px
+    }
+
+    @media(max-width:800px) {
+      .hero-inner {
+        min-height: 0;
+        grid-template-columns: 1fr .75fr;
+        gap: 25px
+      }
+
+      .hero h1 {
+        font-size: clamp(55px, 7vw, 75px)
+      }
+
+      .portrait-shell img {
+        height: 400px
+      }
+
+      .portrait-note {
+        right: -10px
+      }
+
+      .strip-inner {
+        flex-wrap: wrap
+      }
+
+      .section-heading {
+        display: block
+      }
+
+      .section-heading>p {
+        margin-top: 18px
+      }
+    }
+
+    @media(max-width:620px) {
+      .wrap {
+        width: min(100% - 36px, 1180px)
+      }
+
+      .header-inner {
+        height: 72px
+      }
+
+      .site-nav {
+        gap: 18px
+      }
+
+      .site-nav a {
+        font-size: 11px
+      }
+
+      .site-nav .nav-contact {
+        display: none
+      }
+
+      .hero-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding-block: 55px 65px
+      }
+
+      .hero h1 {
+        font-size: clamp(54px, 13vw, 76px)
+      }
+
+      .hero-lead {
+        font-size: 17px
+      }
+
+      .portrait-shell {
+        width: min(100% - 32px, 350px);
+        margin-top: 55px
+      }
+
+      .portrait-shell img {
+        height: 420px
+      }
+
+      .portrait-note {
+        right: -15px
+      }
+
+      .strip-inner {
+        justify-content: center;
+        text-align: center
+      }
+
+      .strip-inner span {
+        font-size: 10px
+      }
+
+      .strip-mark {
+        display: none
+      }
+
+      .explore {
+        padding-block: 75px 85px
+      }
+
+      .link-grid {
+        grid-template-columns: 1fr
+      }
+
+      .feature-link {
+        min-height: 260px
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      .button,
+      .feature-link {
+        transition: none
+      }
+    }
+
+    @media(max-width:620px) {
+      .header-inner {
+        height: auto;
+        min-height: 72px;
+        padding-block: 12px
+      }
+
+      .site-nav {
+        gap: 12px
+      }
+
+      .site-nav .nav-contact {
+        display: inline-block;
+        padding: 6px 10px
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <a href="en-2026-flutter.html">Resume Global 2026</a>
-    <a href="portfolio/portfolio.html">Portfolio</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner"><a class="brand" href="index.html"
+        aria-label="Eaindra Naing home">en<span>.</span></a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="en-2026-flutter.html">Résumé</a><a
+          href="portfolio/portfolio.html">Portfolio</a><a class="nav-contact"
+          href="portfolio/portfolio.html#contact">Contact ↗</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Flutter developer · Yangon</p>
+          <h1 id="hero-title">Hello, I'm<br><em>Eaindra.</em></h1>
+          <p class="hero-lead">I build thoughtful mobile and web experiences with Flutter. Explore the work I've done
+            and the path that brought me here.</p>
+          <div class="hero-actions"><a class="button button-primary" href="portfolio/portfolio.html">View my portfolio
+              <span aria-hidden="true">↗</span></a><a class="button button-outline" href="en-2026-flutter.html">Read my
+              résumé <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="portrait-shell"><img src="portfolio/img/eaindra-2026.jpg" alt="Portrait of Eaindra Naing"
+            width="880" height="1216" fetchpriority="high">
+          <div class="portrait-note">MOBILE · WEB<br>FLUTTER · DART</div>
+        </div>
+      </div>
+    </section>
+    <div class="intro-strip">
+      <div class="wrap strip-inner"><span>Mobile development</span><span class="strip-mark">✳</span><span>Flutter &amp;
+          Dart</span><span class="strip-mark">✳</span><span>Web mini-apps</span><span
+          class="strip-mark">✳</span><span>Thoughtful experiences</span></div>
+    </div>
+    <section class="explore wrap" aria-labelledby="explore-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Explore</p>
+          <h2 class="section-title" id="explore-title">Take a closer <em>look.</em></h2>
+        </div>
+        <p>Choose where you'd like to start—my current experience or the projects behind it.</p>
+      </div>
+      <div class="link-grid"><a class="feature-link" href="en-2026-flutter.html"><span
+            class="feature-link__top"><span>01 / EXPERIENCE</span><span class="feature-link__arrow"
+              aria-hidden="true">↗</span></span>
+          <div class="feature-link__body">
+            <h3>My résumé</h3>
+            <p>See my Flutter work, earlier roles, skills, and education.</p>
+          </div>
+        </a><a class="feature-link feature-link--portfolio" href="portfolio/portfolio.html"><span
+            class="feature-link__top"><span>02 / WORK</span><span class="feature-link__arrow"
+              aria-hidden="true">↗</span></span>
+          <div class="feature-link__body">
+            <h3>My portfolio</h3>
+            <p>Explore my background, capabilities, and selected university projects.</p>
+          </div>
+        </a></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 EAINDRA NAING · HUMAN-LED, AI-ASSISTED</p><a href="portfolio/portfolio.html#contact">Let's connect ↗</a>
+    </div>
+  </footer>
 </body>
 
 </html>

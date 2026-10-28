@@ -12,4 +12,12 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
         navToggle.setAttribute('aria-expanded', 'false');
     })
-})
+});
+
+const backToTop = document.querySelector('.back-to-top');
+const updateBackToTop = () => {
+    backToTop.hidden = window.scrollY < 500;
+};
+
+window.addEventListener('scroll', updateBackToTop, { passive: true });
+updateBackToTop();

@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Eaindra Naing is a Flutter developer building mobile and web mini-app experiences.">
-        <title>Eaindra Naing — Flutter Developer</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link rel="stylesheet" href="css/portfolio-modern.css">
-    </head>
-    <body>
-        <a class="skip-link" href="#home">Skip to content</a>
-        <header>
-            <div class="logo">
-                <a href="#home" aria-label="Eaindra Naing, home">en<span>.</span></a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="portfolio-nav">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav" id="portfolio-nav" aria-label="Main navigation">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Expertise</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- Introduction -->
-        <main>
-        <section class="intro" id="home">
-            <p class="eyebrow intro__eyebrow">MOBILE DEVELOPER · YANGON, MYANMAR</p>
-            <h1 class="section__title section__title--intro">
-                Hello, I’m <strong>Eaindra Naing<span class="accent-period">.</span></strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">I build thoughtful mobile and web experiences with Flutter.</p>
-            <div class="intro__actions"><a class="btn" href="#about">Get to know me <span aria-hidden="true">↗</span></a><a class="intro__contact" href="mailto:eaindranaing026@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a></div>
-            <img src="img/eaindra-2026.jpg" alt="Portrait of Eaindra Naing" class="intro__img">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eaindra Naing is a Flutter developer building mobile and web mini-app experiences.">
+    <title>Eaindra Naing — Flutter Developer</title>
+    <link rel="icon" type="image/svg+xml" href="../icons/portfolio.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/ocean-portfolio.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header>
+        <div class="logo">
+            <a href="../index.html" aria-label="Eaindra Naing home page">en<span>.</span></a>
+        </div>
+        <a class="site-home" href="../index.html"><span aria-hidden="true">←</span> Back to home</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="portfolio-nav">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav" id="portfolio-nav" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Approach</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">What I build</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portfolio opening -->
+    <main>
+        <section class="portfolio-hero" id="home" aria-labelledby="portfolio-hero-title">
+            <div class="portfolio-hero__inner">
+                <div class="portfolio-hero__copy">
+                    <p class="portfolio-hero__eyebrow">EAINDRA NAING <span aria-hidden="true">/</span> FLUTTER DEVELOPER
+                    </p>
+                    <h1 id="portfolio-hero-title">Curious by default.<br><em>Accountable by design.</em></h1>
+                    <p class="portfolio-hero__lead">I like to understand the user journey and the code behind it before
+                        choosing a solution. I ask questions, trace the flow, and turn complex requirements into clear,
+                        reliable experiences.</p>
+                    <p class="portfolio-hero__ai">AI is part of my workflow: I use it to explore ideas, learn faster,
+                        and move through implementation. I review the result, test the behavior, and make the final
+                        decisions myself.</p>
+                    <div class="portfolio-hero__actions">
+                        <a class="portfolio-hero__button" href="#work">Explore my work <span
+                                aria-hidden="true">↗</span></a>
+                        <a class="portfolio-hero__text-link" href="#services">What I build <span
+                                aria-hidden="true">↓</span></a>
+                    </div>
+                </div>
+                <div class="approach-map" aria-label="How I work">
+                    <p class="approach-map__label">MY WORKING STYLE <span>01 — 03</span></p>
+                    <div class="approach-step"><span>01</span><div><h2>Understand first</h2><p>Clarify the goal, trace the existing flow, and find the real problem.</p></div></div>
+                    <div class="approach-step"><span>02</span><div><h2>Explore with AI</h2><p>Use AI to compare ideas, learn, and accelerate the work—then question what it produces.</p></div></div>
+                    <div class="approach-step"><span>03</span><div><h2>Own the outcome</h2><p>Review the code, test the user path, refine the details, and support the result.</p></div></div>
+                </div>
+            </div>
+            <div class="portfolio-hero__footer"><span>QUESTION THE PROBLEM</span><span>USE AI WITH INTENTION</span><span>OWN THE RESULT</span></div>
         </section>
 
         <!-- My services -->
@@ -49,17 +76,23 @@
             <div class="services">
                 <div class="service">
                     <h3>Flutter &amp; mobile apps</h3>
-                    <p>I build and ship cross-platform Flutter features for Android and iOS, with a focus on reliable, responsive experiences. My work includes clean architecture, test-driven development, shared packages, and monorepo workflows.</p>
+                    <p>I build and ship cross-platform Flutter features for Android and iOS, with a focus on reliable,
+                        responsive experiences. My work includes clean architecture, test-driven development, shared
+                        packages, and monorepo workflows.</p>
                 </div> <!-- / service -->
 
                 <div class="service">
                     <h3>Web mini-apps &amp; integrations</h3>
-                    <p>I develop Flutter web mini-apps and connect user-facing features to REST APIs and Firebase services. I work with teams across product and backend development to deliver smooth experiences across screens.</p>
+                    <p>I develop Flutter web mini-apps and connect user-facing features to REST APIs and Firebase
+                        services. I work with teams across product and backend development to deliver smooth experiences
+                        across screens.</p>
                 </div> <!-- / service -->
 
                 <div class="service">
                     <h3>Quality &amp; delivery</h3>
-                    <p>I support features from implementation through testing, deployment, analytics, and production support. My experience includes TDD, CI pipelines, Sentry, Mixpanel, Firebase Analytics, and app store releases.</p>
+                    <p>I support features from implementation through testing, deployment, analytics, and production
+                        support. My experience includes TDD, CI pipelines, Sentry, Mixpanel, Firebase Analytics, and app
+                        store releases.</p>
                 </div> <!-- / service -->
 
             </div> <!-- / services -->
@@ -77,93 +110,141 @@
             </p>
 
             <div class="about-me__body">
-                <p>I’m a mobile developer with three years of professional experience building cross-platform applications for Android, iOS, and web. At Wave Money, I build Flutter mobile features and web mini-app experiences, focusing on reliable user flows and consistent interfaces.</p>
-                <p>My work brings together Flutter and Dart, clean architecture, test-driven development, shared packages, and API integration. I also help investigate production issues and collaborate with product and backend teams to turn complex requirements into dependable, easy-to-use features.</p>
+                <p>I’m a mobile developer with three years of professional experience building cross-platform
+                    applications for Android, iOS, and web. At Wave Money, I build Flutter mobile features and web
+                    mini-app experiences, focusing on reliable user flows and consistent interfaces.</p>
+                <p>My work brings together Flutter and Dart, clean architecture, test-driven development, shared
+                    packages, and API integration. I also help investigate production issues and collaborate with
+                    product and backend teams to turn complex requirements into dependable, easy-to-use features.</p>
             </div>
 
-            <div class="about-me__detail"><span>BEYOND THE SCREEN</span><p>Earlier in my career, I built cross-platform apps with Ionic and Angular and worked on machine learning applications. Those experiences still shape how I approach new problems.</p><a href="../en-2026-flutter.html">View my résumé <span aria-hidden="true">↗</span></a></div>
+            <div class="about-me__detail"><span>BEYOND THE SCREEN</span>
+                <p>Earlier in my career, I built cross-platform apps with Ionic and Angular and worked on machine
+                    learning applications. Those experiences still shape how I approach new problems.</p><a
+                    href="../en-2026-flutter.html">View my résumé <span aria-hidden="true">↗</span></a>
+            </div>
         </section>
 
         <!-- My Work -->
         <section class="my-work" id="work">
             <p class="eyebrow">03 / WORK</p>
             <h2 class="section__title section__title--work">Selected <em>work</em></h2>
-            <p class="section__subtitle section__subtitle--work">A visual collection. Project details are coming soon.</p>
+            <p class="section__subtitle section__subtitle--work">University projects that helped shape how I build
+                today.</p>
 
-            <div class="portfolio">
-                <!-- Portfolio item 03 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (3).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 04 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (4).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 05 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (6).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 06 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (7).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 07 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (8).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 08 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (9).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 09 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (10).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
-                <!-- Portfolio item 10 -->
-                <a href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer" class="portfolio__item">
-                    <img src="img/scene (11).jpg" alt="Portfolio gallery image" class="portfolio__img" loading="lazy">
-                </a>
-
+            <div class="portfolio project-grid">
+                <article class="project-card">
+                    <div class="project-card__visual" aria-hidden="true"><span>01</span><strong>SHOP<br>1702</strong>
+                    </div>
+                    <div class="project-card__content">
+                        <p class="project-card__meta">UNIVERSITY PROJECT · WEB</p>
+                        <h3>Shopping Website</h3>
+                        <p>A PHP shopping site with product browsing, category search, a cart, and order flows.</p>
+                        <p class="project-card__tech">PHP · JavaScript · MySQL</p>
+                        <a href="https://ooenlhw.github.io/shopping1702/" target="_blank"
+                            rel="noopener noreferrer">View live demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card project-card--career">
+                    <div class="project-card__visual" aria-hidden="true"><span>02</span><strong>CAREER</strong></div>
+                    <div class="project-card__content">
+                        <p class="project-card__meta">UNIVERSITY PROJECT · WEB</p>
+                        <h3>Careers in IT</h3>
+                        <p>A PHP site for exploring IT careers by category and search, with learning resources and an
+                            administration area.</p>
+                        <p class="project-card__tech">PHP · MySQL · JavaScript</p>
+                        <a href="https://ooenlhw.github.io/career/" target="_blank" rel="noopener noreferrer">View live
+                            demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card project-card--seint">
+                    <div class="project-card__visual" aria-hidden="true"><span>03</span><strong>SEINT</strong></div>
+                    <div class="project-card__content">
+                        <p class="project-card__meta">UNIVERSITY PROJECT · WEB</p>
+                        <h3>Seint Online Shop</h3>
+                        <p>An online shopping system with product listings, categories, order flow, and an admin area.
+                        </p>
+                        <p class="project-card__tech">PHP · MySQL · JavaScript</p>
+                        <a href="https://ooenlhw.github.io/seint_os/" target="_blank" rel="noopener noreferrer">View
+                            live demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card project-card--blossom">
+                    <div class="project-card__visual" aria-hidden="true"><span>04</span><strong>BLOSSOM</strong></div>
+                    <div class="project-card__content">
+                        <p class="project-card__meta">UNIVERSITY PROJECT · WEB</p>
+                        <h3>Blossom</h3>
+                        <p>An e-commerce project with product browsing, stock status, cart, and administration screens.
+                        </p>
+                        <p class="project-card__tech">PHP · MySQL · JavaScript</p>
+                        <a href="https://ooenlhw.github.io/blossom/" target="_blank" rel="noopener noreferrer">View
+                            live demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card project-card--learn">
+                    <div class="project-card__visual" aria-hidden="true"><span>05</span><strong>LEARN</strong></div>
+                    <div class="project-card__content">
+                        <p class="project-card__meta">UNIVERSITY PROJECT · MOBILE</p>
+                        <h3>Learn & Connect</h3>
+                        <p>A fifth-year academic app for an IT department library, quizzes, and group chat.</p>
+                        <p class="project-card__tech">Ionic · Angular · Capacitor</p>
+                        <a href="https://ooenlhw.github.io/LearnAndConnect/" target="_blank"
+                            rel="noopener noreferrer">View live demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card project-card--sudoku">
+                    <div class="project-card__visual" aria-hidden="true"><span>06</span><strong>SUDOKU</strong></div>
+                    <div class="project-card__content">
+                        <p class="project-card__meta">UNIVERSITY PROJECT · MACHINE LEARNING</p>
+                        <h3>Sudoku CNN Study</h3>
+                        <p>An exploration of extracting and solving Sudoku puzzles from images using image processing
+                            and CNN digit recognition, based on an upstream project.</p>
+                        <p class="project-card__tech">Python · CNN · Flask</p>
+                        <a href="https://ooenlhw.github.io/solve_sudoku_cnn/" target="_blank" rel="noopener noreferrer">View live demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
             </div>
         </section>
 
-        </main>
+    </main>
 
-        <!-- Footer -->
-        <footer>
-            <p class="eyebrow">HAVE SOMETHING IN MIND?</p>
-            <h2>Let’s make something <em>meaningful.</em></h2>
-            <a href="mailto:eaindranaing026@gmail.com" class="footer-link">eaindranaing026@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/ooenlhw" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github-square"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com/ooenlhw" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://facebook.com/ooenlhw" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin.com/in/eaindranaing" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        <script src="js/index.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+            <div class="contact-intro">
+                <p class="eyebrow">04 / GET IN TOUCH</p>
+                <h2 id="contact-title">Let’s start a <em>conversation.</em></h2>
+                <p>Have a project, role, or idea to discuss? I’m happy to connect and hear what you’re working on.</p>
+                <a class="contact-primary" href="mailto:eaindranaing026@gmail.com">Send me an email <span
+                        aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-details" aria-label="Contact details">
+                <div class="contact-detail contact-detail--wide"><span>EMAIL</span><a
+                        href="mailto:eaindranaing026@gmail.com">eaindranaing026@gmail.com <span
+                            aria-hidden="true">↗</span></a></div>
+                <div class="contact-detail"><span>PHONE</span>
+                    <div class="contact-detail__links"><a href="tel:+959790152000">+95 9 790 152000 <span
+                                aria-hidden="true">↗</span></a><a href="tel:+959788065682">+95 9 788 065682 <span
+                                aria-hidden="true">↗</span></a></div>
+                </div>
+                <div class="contact-detail"><span>WHATSAPP</span><a href="https://wa.me/959790152000" target="_blank"
+                        rel="noopener noreferrer">+95 9 790 152000 <span aria-hidden="true">↗</span></a></div>
+                <div class="contact-detail"><span>GITHUB</span><a href="https://github.com/ooenlhw" target="_blank"
+                        rel="noopener noreferrer">github.com/ooenlhw <span aria-hidden="true">↗</span></a></div>
+                <div class="contact-detail"><span>LINKEDIN</span><a href="https://linkedin.com/in/eaindranaing"
+                        target="_blank" rel="noopener noreferrer">linkedin.com/in/eaindranaing <span
+                            aria-hidden="true">↗</span></a></div>
+                <div class="contact-detail"><span>STACK OVERFLOW</span><a
+                        href="https://stackoverflow.com/users/10079359/eaindra" target="_blank"
+                        rel="noopener noreferrer">View my profile <span aria-hidden="true">↗</span></a></div>
+            </div>
+        </div>
+        <div class="contact-bottom"><span>© 2026 EAINDRA NAING · HUMAN-LED, AI-ASSISTED</span></div>
+    </footer>
+    <a class="back-to-top" href="#home" aria-label="Back to top" title="Back to top" hidden>
+        <span aria-hidden="true">↑</span>
+    </a>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
